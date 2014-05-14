@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Conversion Rate Calculator</title>
+<meta name="description" content="Conversion Rate Calculator. Quickly calculate your conversions and analyze your marketing and product KPI's.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
+<script src="js.js"></script>
+<script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-33264867-1', 'engineapp.ca');
+        ga('send', 'pageview');
+ </script>
+</head>
+<body>
+<div class="stadium">
+   <h1>Conversion Rate Calculator</h1>
+   <p>Quickly calculate your conversion rates and analyze your marketing and product KPI's.</p>
+  <div class="court">
+  <form  name="form" id="form">
+      <div class="board">
+         <div class="points">
+<h2>Conversion</h2>
+<input type="Text" name="weight" size="4" onkeyup="calculateConversionRate()">   
+</div>
+<div class="games">
+  <h2>Views</h2>
+<input type="Text" name="height" size="4" onkeyup="calculateConversionRate()"> 
+</div>
+    </div>
+<div class="total">  
+    <input disabled="disabled" type="Text" name="ConversionRate" id="ConversionRate" size="4" 
+       onkeyup="calculateViews()">
+      </div>
+    <h2>Conversion Rate</h2>
+</form>
+  </div>
+    </div>
+</body>
+</html>
